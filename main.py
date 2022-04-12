@@ -1,6 +1,8 @@
 from playwright.sync_api import sync_playwright
 from bs4 import BeautifulSoup
+
 url = "https://store.epicgames.com/en-US/free-games"
+
 
 def main():
     games = []
@@ -24,6 +26,7 @@ def main():
 
     for key in games_dict:
         print(key, '-', games_dict[key])
+
 
 if __name__ == '__main__':
     main()
