@@ -12,7 +12,7 @@ def main():
         page = browser.new_page()
         page.goto(url)
         page_source = page.inner_html('div.css-1myhtyb')
-        print(page_source)
+
 
     #
     soup = BeautifulSoup(page_source, 'lxml')
